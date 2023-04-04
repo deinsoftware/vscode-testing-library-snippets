@@ -1,0 +1,37 @@
+{
+  "cSpell.words": [
+    "cfrv",
+    "deinsoftware",
+    "Equiman",
+    "github",
+    "mrvo",
+    "paypal",
+    "tbct",
+    "tbgt",
+    "tbgte",
+    "tbid",
+    "tblt",
+    "tblte",
+    "thbc",
+    "thbct",
+    "thbcw",
+    "thblcw",
+    "tmis",
+    "ttemis",
+    "ttems",
+    "vfrv",
+    "volta"
+  ],
+  "markdownlint.config": {
+    "MD024": { "siblings_only": true },
+    "MD033": false
+  },
+  "explorer.fileNesting.patterns": {
+    "README*": "CHANGELOG*, CODE_OF_CONDUCT.md, CONTRIBUTING.md, LICENSE*, README*, CHEATSHEET*"
+  },
+  "[json][jsonc]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

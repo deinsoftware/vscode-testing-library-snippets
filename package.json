@@ -1,0 +1,79 @@
+{
+  "name": "testing-library-snippets",
+  "description": "VS Code Testing Library snippets for JS and TS",
+  "version": "1.4.1",
+  "displayName": "Testing Library Snippets",
+  "publisher": "deinsoftware",
+  "icon": "images/light-icon.png",
+  "keywords": [
+    "testing-library",
+    "rtl",
+    "vtl",
+    "tl",
+    "testing",
+    "snippets",
+    "javascript",
+    "typescript",
+    "react",
+    "vue"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deinsoftware/vscode-testing-library-snippets"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/deinsoftware"
+  },
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "main": "./build/extension.js",
+  "browser": "./build/extension.js",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "activationEvents": [
+    "onCommand:extension.snippetSearch"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/import.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/import.json"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "vitest --run --reporter verbose",
+    "test:w": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "volta": {
+    "node": "18.14.2",
+    "npm": "9.5.0"
+  },
+  "devDependencies": {
+    "vitest": "0.29.1"
+  }
+}
