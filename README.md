@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/github/license/deinsoftware/vscode-testing-library-snippets)](LICENSE.md)
 [![Open in VS Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/deinsoftware/vscode-testing-library-snippets)
 
-![Testing Library](https://raw.githubusercontent.com/deinsoftware/vscode-testing-library-snippet/main/.github/social/preview.png)
+![Testing Library](https://raw.githubusercontent.com/deinsoftware/vscode-testing-library-snippets/main/.github/social/preview.png)
 
 The quick and easy way to create and use Testing Library with [VS Code](https://code.visualstudio.com/).
 
