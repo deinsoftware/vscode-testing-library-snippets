@@ -73,13 +73,13 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 ### Import
 
-|  Trigger | Result                                                            |
-| -------: | ----------------------------------------------------------------- |
-|   `itl→` | `import { render, screen } from '@testing-library/░<react\|vue>'█` |
-|   `itr→` | `import { render, screen } from '@testing-library/react'█`         |
-|   `itv→` | `import { render, screen } from '@testing-library/vue'█`           |
-|  `itrh→` | `import { renderHook } from '@testing-library/react'█`            |
-|  `itue→` | `import user from '@testing-library/user-event'█`                 |
+|  Trigger | Result                                                              |
+| -------: | ------------------------------------------------------------------- |
+|   `itl→` | `import { render, screen } from '@testing-library/░<react\|vue>'█`  |
+|   `itr→` | `import { render, screen } from '@testing-library/react'█`          |
+|   `itv→` | `import { render, screen } from '@testing-library/vue'█`            |
+|  `itrh→` | `import { renderHook } from '@testing-library/react'█`              |
+|  `itue→` | `import user from '@testing-library/user-event'█`                   |
 
 ### User Event
 
@@ -99,6 +99,13 @@ Below is a list of all available snippets and the triggers of each one. The `░
 | `gbrhl→` | `screen.getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
 |  `gabr→` | `screen.getAllByRole('░id')█`                                    |
 | `gabro→` | `screen.getAllByRole('░id', {░})█`                               |
+
+### Debug
+
+|  Trigger | Result                               |
+| -------: | ------------------------------------ |
+|    `sd→` | `screen.debug()█`                    |
+|  `sltp→` | `screen.logTestingPlaygroundURL()█`  |
 
 ⇧ [Back to menu](#menu)
 
