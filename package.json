@@ -1,7 +1,7 @@
 {
   "name": "testing-library-snippets",
   "description": "VS Code Testing Library snippets for JS and TS",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "displayName": "Testing Library Snippets",
   "publisher": "deinsoftware",
   "icon": "images/light-icon.png",
@@ -55,6 +55,10 @@
         "path": "./snippets/queries.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/debug.json"
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/import.json"
       },
@@ -65,6 +69,10 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/queries.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/debug.json"
       },
       {
         "language": "vue",
@@ -79,6 +87,10 @@
         "path": "./snippets/queries.json"
       },
       {
+        "language": "vue",
+        "path": "./snippets/debug.json"
+      },
+      {
         "language": "typescript",
         "path": "./snippets/import.json"
       },
@@ -91,6 +103,10 @@
         "path": "./snippets/queries.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/debug.json"
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/import.json"
       },
@@ -101,6 +117,10 @@
       {
         "language": "typescriptreact",
         "path": "./snippets/queries.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/debug.json"
       }
     ]
   },

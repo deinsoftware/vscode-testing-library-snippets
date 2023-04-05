@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.0.3 - 2023/04/05
+
+### Added
+
+- debug snippets
+
 ## 0.0.2 - 2023/04/05
 
 ### Added
