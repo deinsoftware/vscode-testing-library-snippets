@@ -21,6 +21,8 @@ The quick and easy way to create and use Testing Library with [VS Code](https://
 - [Supported Languages](#supported-languages)
 - [Snippets](#snippets)
   - [Import](#import)
+  - [User Event](#user-event)
+  - [Queries](#queries)
 - [Keyboard](#keyboard)
 - [Settings](#settings)
 - [About](#about)
@@ -73,10 +75,30 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 |  Trigger | Result                                                            |
 | -------: | ----------------------------------------------------------------- |
-|   `itl→` | `import { render, screen } from '@testing-library/░<react\|vue>█` |
-|   `itr→` | `import { render, screen } from '@testing-library/react█`         |
-|   `itv→` | `import { render, screen } from '@testing-library/vue█`           |
-|   `itu→` | `import user from '@testing-library/user-event'█`                 |
+|   `itl→` | `import { render, screen } from '@testing-library/░<react\|vue>'█` |
+|   `itr→` | `import { render, screen } from '@testing-library/react'█`         |
+|   `itv→` | `import { render, screen } from '@testing-library/vue'█`           |
+|  `itrh→` | `import { renderHook } from '@testing-library/react'█`            |
+|  `itue→` | `import user from '@testing-library/user-event'█`                 |
+
+### User Event
+
+|  Trigger | Result                                                                 |
+| -------: | ---------------------------------------------------------------------- |
+|  `beus→` | <code>beforeEach(() => {<br/>&nbsp;&nbsp;user.setup()<br/>})█</code>   |
+
+### Queries
+
+|  Trigger | Result                                                           |
+| -------: | ---------------------------------------------------------------- |
+|   `gbr→` | `screen.getByRole('░id')█`                                       |
+|  `gbro→` | `screen.getByRole('░id', {░})█`                                  |
+|  `gbrc→` | `screen.getByRole('checkbox')█`                                  |
+| `gbrcc→` | `screen.getByRole('checkbox', { checked: ░<true\|false>} })█`    |
+|  `gbrh→` | `screen.getByRole('heading')█`                                   |
+| `gbrhl→` | `screen.getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
+|  `gabr→` | `screen.getAllByRole('░id')█`                                    |
+| `gabro→` | `screen.getAllByRole('░id', {░})█`                               |
 
 ⇧ [Back to menu](#menu)
 
