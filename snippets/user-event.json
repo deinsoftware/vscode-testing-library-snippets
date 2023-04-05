@@ -1,0 +1,7 @@
+{
+  "beforeEach": {
+    "prefix": "beus",
+    "body": ["beforeEach(() => {", "\tuser.setup()", "})$0"],
+    "description": "beforeEach user setup function is called once before each spec"
+  }
+}

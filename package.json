@@ -1,7 +1,7 @@
 {
   "name": "testing-library-snippets",
   "description": "VS Code Testing Library snippets for JS and TS",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Testing Library Snippets",
   "publisher": "deinsoftware",
   "icon": "images/light-icon.png",
@@ -47,20 +47,60 @@
         "path": "./snippets/import.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/user-event.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/queries.json"
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/import.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/user-event.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/queries.json"
       },
       {
         "language": "vue",
         "path": "./snippets/import.json"
       },
       {
+        "language": "vue",
+        "path": "./snippets/user-event.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/queries.json"
+      },
+      {
         "language": "typescript",
         "path": "./snippets/import.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/user-event.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/queries.json"
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/import.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/user-event.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/queries.json"
       }
     ]
   },

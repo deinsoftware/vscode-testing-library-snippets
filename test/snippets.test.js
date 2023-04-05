@@ -1,9 +1,13 @@
 import { it, expect, describe } from 'vitest'
 
 const importSnippets = require("../snippets/import.json")
+const userEventSnippets = require("../snippets/user-event.json")
+const queriesSnippets = require("../snippets/queries.json")
 
 const snippets = {
   ...importSnippets,
+  ...userEventSnippets,
+  ...queriesSnippets,
 }
 
 const unique = (xs) => [...new Set(xs)]

@@ -1,0 +1,42 @@
+{
+  "getBy.role": {
+    "prefix": "gbr",
+    "body": ["screen.getByRole('${1:id}')$0"],
+    "description": "getByRole query"
+  },
+  "getBy.role.options": {
+    "prefix": "gbro",
+    "body": ["screen.getByRole('${1:id}', {$2})$0"],
+    "description": "getByRole query with options"
+  },
+  "getBy.role.checkbox": {
+    "prefix": "gbrc",
+    "body": ["screen.getByRole('checkbox')$0"],
+    "description": "getByRole checkbox"
+  },
+  "getBy.role.checkbox.checked": {
+    "prefix": "gbrcc",
+    "body": ["screen.getByRole('checkbox', { checked: ${1|true,false|} })$0"],
+    "description": "getByRole checkbox checked"
+  },
+  "getBy.role.heading": {
+    "prefix": "gbrh",
+    "body": ["screen.getByRole('heading')$0"],
+    "description": "getByRole heading"
+  },
+  "getBy.role.heading.level": {
+    "prefix": "gbrhl",
+    "body": ["screen.getByRole('heading', { level: ${1|1,2,3,4,5,6|} })$0"],
+    "description": "getByRole heading level"
+  },
+  "getAllBy.role": {
+    "prefix": "gabr",
+    "body": ["screen.getAllByRole('${1:id}')$0"],
+    "description": "getAllByRole query"
+  },
+  "getAllBy.role.options": {
+    "prefix": "gabro",
+    "body": ["screen.getAllByRole('${1:id}', {$2})$0"],
+    "description": "getAllByRole query with options"
+  }
+}
