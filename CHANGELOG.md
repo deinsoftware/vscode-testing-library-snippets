@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.0.4 - 2023/04/15
+
+### Fixed
+
+- Back to home on README
+
 ## 0.0.3 - 2023/04/05
 
 ### Added

@@ -120,6 +120,8 @@ Remember to complement the snippets with these keyboard shortcuts that can be us
 | Insert line above | `ctrl+shift+enter` | `cmd+shift+enter` |
 | Insert line below | `ctrl+enter`       | `cmd+enter`       |
 
+⇧ [Back to menu](#menu)
+
 ---
 
 ## Settings
