@@ -23,6 +23,7 @@ The quick and easy way to create and use Testing Library with [VS Code](https://
   - [Import](#import)
   - [User Event](#user-event)
   - [Queries](#queries)
+  - [Regex](#regex)
 - [Keyboard](#keyboard)
 - [Settings](#settings)
 - [About](#about)
@@ -89,16 +90,25 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 ### Queries
 
-|  Trigger | Result                                                           |
-| -------: | ---------------------------------------------------------------- |
-|   `gbr→` | `screen.getByRole('░id')█`                                       |
-|  `gbro→` | `screen.getByRole('░id', {░})█`                                  |
-|  `gbrc→` | `screen.getByRole('checkbox')█`                                  |
-| `gbrcc→` | `screen.getByRole('checkbox', { checked: ░<true\|false>} })█`    |
-|  `gbrh→` | `screen.getByRole('heading')█`                                   |
-| `gbrhl→` | `screen.getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
-|  `gabr→` | `screen.getAllByRole('░id')█`                                    |
-| `gabro→` | `screen.getAllByRole('░id', {░})█`                               |
+|  Trigger  | Result                                                           |
+| --------: | ---------------------------------------------------------------- |
+|   `gbr→`  | `screen.getByRole('░id')█`                                       |
+|  `gbro→`  | `screen.getByRole('░id', {░})█`                                  |
+|  `gbrc→`  | `screen.getByRole('checkbox')█`                                  |
+| `gbrcc→`  | `screen.getByRole('checkbox', { checked: ░<true\|false>} })█`    |
+|  `gbrh→`  | `screen.getByRole('heading')█`                                   |
+| `gbrhl→`  | `screen.getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
+|  `gabr→`  | `screen.getAllByRole('░id')█`                                    |
+| `gabro→`  | `screen.getAllByRole('░id', {░})█`                               |
+|   `gbt→`  | `screen.getByText(░)█`                                           |
+|  `gbtf→`  | `screen.getByText('░Text Match')█`                               |
+|  `gbti→`  | `screen.getByText('░text match', {ignore: false})█`              |
+|  `gbts→`  | `screen.getByText('░ext Matc', {exact: false})█`                 |
+| `gbtsi→`  | `screen.getByText('░ext matc', {exact: false, ignore: false})█`  |
+| `gbtsw→`  | `screen.getByText((content) => content.startsWith('░Text'))█`    |
+| `gbtesw→` | <code>screen.getByText((content, element) => {<br/>&nbsp;&nbsp;return element.tagName.toLowerCase() === '░div' && content.startsWith('░Text')<br/>})█</code>   |
+| `gbtew→`  | `screen.getByText((content) => content.endsWith('░Match'))█`     |
+| `gbteew→` | <code>screen.getByText((content, element) => {<br/>&nbsp;&nbsp;return element.tagName.toLowerCase() === '░div' && content.endsWith('░Match')<br/>})█</code>    |
 
 ### Debug
 
@@ -106,6 +116,21 @@ Below is a list of all available snippets and the triggers of each one. The `░
 | -------: | ------------------------------------ |
 |    `sd→` | `screen.debug()█`                    |
 |  `sltp→` | `screen.logTestingPlaygroundURL()█`  |
+
+### Regex
+
+It can be used as a text matcher or `name` property on queries.
+
+| Trigger | Description                 | Result              |
+| ------: | --------------------------- | ------------------- |
+|   `rf→` | full text match             | `/^░Text Match$/█`  |
+|  `rfi→` | full text match ignore case | `/^░text match$/i█` |
+|   `rs→` | substring match             | `/░ext Matc/█`      |
+|  `rsi→` | substring match ignore case | `/░ext matc/i█`     |
+|  `rsw→` | start with                  | `/^░Text/█`         |
+| `rswi→` | start with ignore case      | `/^░text/i█`        |
+|  `rew→` | end with                    | `/░Match$/█`        |
+| `rewi→` | end with ignore case        | `/░match$/i█`       |
 
 ⇧ [Back to menu](#menu)
 
