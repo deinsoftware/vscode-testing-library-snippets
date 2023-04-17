@@ -26,6 +26,8 @@
     "rewi",
     "rswi",
     "sltp",
+    "SWPM",
+    "testid",
     "volta"
   ],
   "markdownlint.config": {

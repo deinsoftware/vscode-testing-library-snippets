@@ -19,6 +19,7 @@ The quick and easy way to create and use Testing Library with [VS Code](https://
   - [Extension Manager](#extension-manager)
   - [Marketplace](#marketplace)
 - [Supported Languages](#supported-languages)
+- [Cheat Sheet](#cheat-sheet)
 - [Snippets](#snippets)
   - [Import](#import)
   - [User Event](#user-event)
@@ -63,6 +64,32 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 | JavaScript React | `.jsx`    |
 | TypeScript React | `.tsx`    |
 | Vue              | `.vue`    |
+
+⇧ [Back to menu](#menu)
+
+---
+
+## Cheat Sheet
+
+| Search Variants  | Result                                        |
+| ---------------- | --------------------------------------------- |
+| `getBy...`       | `Element` or `Error`                          |
+| `getAllBy...`    | `Element[]` or `Error`                        |
+| `queryBy...`     | `Element` or `null`                           |
+| `queryAllBy...`  | `Element[]` or `null`                         |
+| `findBy...`      | `Promise<Element>` or `Promise<rejection>`    |
+| `findAllBy...`   | `Promise<Element[]>` or `Promise<rejection>`  |
+
+| Search Types          | Result                                        |
+| --------------------- | --------------------------------------------- |
+| `...Role`             | `<div aria="role">` or [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)  |
+| `...LabelText`        | `<label for="Text">`                          |
+| `...PlaceHolderText`  | `<input placeholder="Text">`                  |
+| `...Text`             | `<a href="/page">Text</a>`                    |
+| `...DisplayValue`     | `<input value="Text">`                        |
+| `...AltText`          | `<img alt="Text">`                            |
+| `...Title`            | `<span title="Text">` or `<title>`            |
+| `...TestId`           | `<input data-testid="Id">`                    |
 
 ⇧ [Back to menu](#menu)
 
