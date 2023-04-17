@@ -38,5 +38,63 @@
     "prefix": "gabro",
     "body": ["screen.getAllByRole('${1:id}', {$2})$0"],
     "description": "getAllByRole query with options"
+  },
+
+  "getBy.text": {
+    "prefix": "gbt",
+    "body": ["screen.getByText($1)$0"],
+    "description": "getByText query"
+  },
+  "getBy.text.full": {
+    "prefix": "gbtf",
+    "body": ["screen.getByText('${1:Text Match}')$0"],
+    "description": "getByText query full string match"
+  },
+  "getBy.text.ignore": {
+    "prefix": "gbti",
+    "body": ["screen.getByText('${1:text match}', {ignore: false})$0"],
+    "description": "getByText query full string ignore case"
+  },
+  "getBy.text.substring": {
+    "prefix": "gbts",
+    "body": ["screen.getByText('${1:ext Matc}', {exact: false})$0"],
+    "description": "getByText query substring match"
+  },
+  "getBy.text.substring+ignore": {
+    "prefix": "gbtsi",
+    "body": [
+      "screen.getByText('${1:ext matc}', {exact: false, ignore: false})$0"
+    ],
+    "description": "getByText query substring match ignore case"
+  },
+  "getBy.text.startWith": {
+    "prefix": "gbtsw",
+    "body": [
+      "screen.getByText((content) => content.startsWith('${1:Text}'))$0"
+    ],
+    "description": "getByText query start with match"
+  },
+  "getBy.text.element.startWith": {
+    "prefix": "gbtesw",
+    "body": [
+      "screen.getByText((content, element) => {",
+      "\treturn element.tagName.toLowerCase() === '${1:div}' && content.startsWith('${2:Text}')",
+      "})"
+    ],
+    "description": "getByText query start with match on specific element"
+  },
+  "getBy.text.endWith": {
+    "prefix": "gbtew",
+    "body": ["screen.getByText((content) => content.endsWith('${1:Match}'))$0"],
+    "description": "getByText query end with match"
+  },
+  "getBy.text.element.endWith": {
+    "prefix": "gbteew",
+    "body": [
+      "screen.getByText((content, element) => {",
+      "\treturn element.tagName.toLowerCase() === '${1:div}' && content.endsWith('${1:Match}')",
+      "})"
+    ],
+    "description": "getByText query end with match on specific element"
   }
 }

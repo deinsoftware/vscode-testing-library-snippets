@@ -9,6 +9,13 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.0.5 - 2023/04/16
+
+### Added
+
+- regex snippets
+- getByText query snippets
+
 ## 0.0.4 - 2023/04/15
 
 ### Fixed
