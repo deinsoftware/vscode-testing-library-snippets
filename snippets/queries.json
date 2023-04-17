@@ -1,100 +1,119 @@
 {
-  "getBy.role": {
-    "prefix": "gbr",
-    "body": ["screen.getByRole('${1:id}')$0"],
-    "description": "getByRole query"
+  "by.role": {
+    "prefix": "br",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('${2:id}')$0"
+    ],
+    "description": "Role query"
   },
-  "getBy.role.options": {
-    "prefix": "gbro",
-    "body": ["screen.getByRole('${1:id}', {$2})$0"],
-    "description": "getByRole query with options"
+  "by.role.options": {
+    "prefix": "bro",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('${2:id}', {$3})$0"
+    ],
+    "description": "Role query with options"
   },
-  "getBy.role.checkbox": {
-    "prefix": "gbrc",
-    "body": ["screen.getByRole('checkbox')$0"],
-    "description": "getByRole checkbox"
+  "by.role.options.name": {
+    "prefix": "bron",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('${2:id}',\t{$3})$0"
+    ],
+    "description": "Role query with name on options"
   },
-  "getBy.role.checkbox.checked": {
-    "prefix": "gbrcc",
-    "body": ["screen.getByRole('checkbox', { checked: ${1|true,false|} })$0"],
-    "description": "getByRole checkbox checked"
+  "by.role.checkbox": {
+    "prefix": "brc",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('checkbox')$0"
+    ],
+    "description": "Role checkbox"
   },
-  "getBy.role.heading": {
-    "prefix": "gbrh",
-    "body": ["screen.getByRole('heading')$0"],
-    "description": "getByRole heading"
+  "by.role.checkbox.checked": {
+    "prefix": "brcc",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('checkbox', { checked: ${2|true,false|} })$0"
+    ],
+    "description": "Role checkbox checked"
   },
-  "getBy.role.heading.level": {
-    "prefix": "gbrhl",
-    "body": ["screen.getByRole('heading', { level: ${1|1,2,3,4,5,6|} })$0"],
-    "description": "getByRole heading level"
+  "by.role.heading": {
+    "prefix": "brh",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('heading')$0"
+    ],
+    "description": "Role heading"
   },
-  "getAllBy.role": {
-    "prefix": "gabr",
-    "body": ["screen.getAllByRole('${1:id}')$0"],
-    "description": "getAllByRole query"
-  },
-  "getAllBy.role.options": {
-    "prefix": "gabro",
-    "body": ["screen.getAllByRole('${1:id}', {$2})$0"],
-    "description": "getAllByRole query with options"
+  "by.role.heading.level": {
+    "prefix": "brhl",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('heading', { level: ${2|1,2,3,4,5,6|} })$0"
+    ],
+    "description": "Role heading level"
   },
 
-  "getBy.text": {
-    "prefix": "gbt",
-    "body": ["screen.getByText($1)$0"],
-    "description": "getByText query"
-  },
-  "getBy.text.full": {
-    "prefix": "gbtf",
-    "body": ["screen.getByText('${1:Text Match}')$0"],
-    "description": "getByText query full string match"
-  },
-  "getBy.text.ignore": {
-    "prefix": "gbti",
-    "body": ["screen.getByText('${1:text match}', {ignore: false})$0"],
-    "description": "getByText query full string ignore case"
-  },
-  "getBy.text.substring": {
-    "prefix": "gbts",
-    "body": ["screen.getByText('${1:ext Matc}', {exact: false})$0"],
-    "description": "getByText query substring match"
-  },
-  "getBy.text.substring+ignore": {
-    "prefix": "gbtsi",
+  "by.text": {
+    "prefix": "bt",
     "body": [
-      "screen.getByText('${1:ext matc}', {exact: false, ignore: false})$0"
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text($2)$0"
     ],
-    "description": "getByText query substring match ignore case"
+    "description": "Text query"
   },
-  "getBy.text.startWith": {
-    "prefix": "gbtsw",
+  "by.text.full": {
+    "prefix": "btf",
     "body": [
-      "screen.getByText((content) => content.startsWith('${1:Text}'))$0"
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text('${2:Text Match}')$0"
     ],
-    "description": "getByText query start with match"
+    "description": "Text query full string match"
   },
-  "getBy.text.element.startWith": {
-    "prefix": "gbtesw",
+  "by.text.ignore": {
+    "prefix": "bti",
     "body": [
-      "screen.getByText((content, element) => {",
-      "\treturn element.tagName.toLowerCase() === '${1:div}' && content.startsWith('${2:Text}')",
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text('${2:text match}', {ignore: false})$0"
+    ],
+    "description": "Text query full string ignore case"
+  },
+  "by.text.substring": {
+    "prefix": "bts",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text('${2:ext Matc}', {exact: false})$0"
+    ],
+    "description": "Text query substring match"
+  },
+  "by.text.substring+ignore": {
+    "prefix": "btsi",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text('${2:ext matc}', {exact: false, ignore: false})$0"
+    ],
+    "description": "Text query substring match ignore case"
+  },
+  "by.text.startWith": {
+    "prefix": "btsw",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content) => content.startsWith('${2:Text}'))$0"
+    ],
+    "description": "Text query start with match"
+  },
+  "by.text.element.startWith": {
+    "prefix": "btesw",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content, element) => {",
+      "\treturn element.tagName.toLowerCase() === '${2:div}' && content.startsWith('${3:Text}')",
       "})"
     ],
-    "description": "getByText query start with match on specific element"
+    "description": "Text query start with match on specific element"
   },
-  "getBy.text.endWith": {
-    "prefix": "gbtew",
-    "body": ["screen.getByText((content) => content.endsWith('${1:Match}'))$0"],
-    "description": "getByText query end with match"
-  },
-  "getBy.text.element.endWith": {
-    "prefix": "gbteew",
+  "by.text.endWith": {
+    "prefix": "btew",
     "body": [
-      "screen.getByText((content, element) => {",
-      "\treturn element.tagName.toLowerCase() === '${1:div}' && content.endsWith('${1:Match}')",
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content) => content.endsWith('${2:Match}'))$0"
+    ],
+    "description": "Text query end with match"
+  },
+  "by.text.element.endWith": {
+    "prefix": "bteew",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content, element) => {",
+      "\treturn element.tagName.toLowerCase() === '${2:div}' && content.endsWith('${3:Match}')",
       "})"
     ],
-    "description": "getByText query end with match on specific element"
+    "description": "Text query end with match on specific element"
   }
 }
