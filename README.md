@@ -120,7 +120,7 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 Sorted by recommended official priority
 
-1. Role
+#### 1. Role
 
 |  Trigger | Result                                                            |
 | :------- | ----------------------------------------------------------------- |
@@ -132,19 +132,19 @@ Sorted by recommended official priority
 | `brh→`   | `screen.░getByRole('heading')█`                                   |
 | `brhl→`  | `screen.░getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
 
-4. Text
+#### 4. Text
 
-|  Trigger | Result                                                           |
-| :------- | ---------------------------------------------------------------- |
+|  Trigger | Result                                                            |
+| :------- | ----------------------------------------------------------------- |
 | `bt→`    | `screen.░getByText(░)█`                                           |
 | `btf→`   | `screen.░getByText('░Text Match')█`                               |
 | `bti→`   | `screen.░getByText('░text match', {ignore: false})█`              |
 | `bts→`   | `screen.░getByText('░ext Matc', {exact: false})█`                 |
 | `btsi→`  | `screen.░getByText('░ext matc', {exact: false, ignore: false})█`  |
 | `btsw→`  | `screen.░getByText((content) => content.startsWith('░Text'))█`    |
-| `btesw→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;return element.tagName.toLowerCase() === '░div' && content.startsWith('░Text')<br/>})█</code>   |
+| `btesw→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.startsWith('░Text')<br/>})█</code>   |
 | `btew→`  | `screen.░getByText((content) => content.endsWith('░Match'))█`     |
-| `bteew→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;return element.tagName.toLowerCase() === '░div' && content.endsWith('░Match')<br/>})█</code>    |
+| `bteew→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.endsWith('░Match')<br/>})█</code>    |
 
 ### Debug
 
