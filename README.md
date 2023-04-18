@@ -72,7 +72,7 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 
 ## Cheat Sheet
 
-You can write any combination of Search variants and Search types.
+You can write any combination of **Search variants** and **Search types**.
 
 ### Search variants
 
@@ -89,16 +89,16 @@ You can write any combination of Search variants and Search types.
 
 Sorted by oficial recommended [order of priority](https://testing-library.com/docs/queries/about/#priority).
 
-|   | Types                 | finds by...                      | DOM example                           |
-| - | --------------------- | -------------------------------- | ------------------------------------- |
-| 1 | ...,`Role`            | [ARIA role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)                        | `<div role="dialog" />`               |
-| 2 | ...,`LabelText`       | label or aria-label content      | `<label for="element" />`             |
-| 3 | ...,`PlaceholderText` | input placeholder value          | `<input placeholder="name" />`        |
-| 4 | ...,`Text`            | element text content             | `<p>Lorem ipsum</p>`                  |
-| 5 | ...,`DisplayValue`    | form element current value       | `<input value="Current Value">`       |
-| 6 | ...,`AltText`         | img alt attribute                | `<img alt="movie poster" />`          |
-| 7 | ...,`Title`           | title attribute or svg title tag | `<span title="Add" />` or `<title />` |
-| 8 | ...,`TestId`          | data-testid attribute            | `<div data-testid="some-message" />`  |
+|   | Types                | finds by...                      | DOM example                           |
+| - | -------------------- | -------------------------------- | ------------------------------------- |
+| 1 | ...`Role`            | [ARIA role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)                        | `<div role="dialog" />`               |
+| 2 | ...`LabelText`       | label or aria-label content      | `<label for="element" />`             |
+| 3 | ...`PlaceholderText` | input placeholder value          | `<input placeholder="name" />`        |
+| 4 | ...`Text`            | element text content             | `<p>Lorem ipsum</p>`                  |
+| 5 | ...`DisplayValue`    | form element current value       | `<input value="Current Value">`       |
+| 6 | ...`AltText`         | img alt attribute                | `<img alt="movie poster" />`          |
+| 7 | ...`Title`           | title attribute or svg title tag | `<span title="Add" />` or `<title />` |
+| 8 | ...`TestId`          | data-testid attribute            | `<div data-testid="some-message" />`  |
 
 > For more information visit the oficial cheat sheet: [DOM](https://testing-library.com/docs/dom-testing-library/cheatsheet) - [React](https://testing-library.com/docs/react-testing-library/cheatsheet) - [Vue](https://testing-library.com/docs/vue-testing-library/cheatsheet)
 
@@ -128,31 +128,33 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 ### Queries
 
+All the query `░variant` start with `░getBy` by default, but can be easily changed between `<getBy|getAllBy|queryBy|queryAllBy|findBy|findByAll>` once reach the TAB position.
+
 #### 1. Role
 
 |  Trigger | Result                                                            |
 | :------- | ----------------------------------------------------------------- |
-| `br→`    | `screen.░getByRole('░id')█`                                       |
-| `bro→`   | `screen.░getByRole('░id', {░})█`                                  |
-| `bron→`  | `screen.░getByRole('░id', {name: ░})█`                                  |
-| `brc→`   | `screen.░getByRole('checkbox')█`                                  |
-| `brcc→`  | `screen.░getByRole('checkbox', { checked: ░<true\|false>} })█`    |
-| `brh→`   | `screen.░getByRole('heading')█`                                   |
-| `brhl→`  | `screen.░getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
+| `br→`    | `screen.░variantRole('░id')█`                                       |
+| `bro→`   | `screen.░variantRole('░id', {░})█`                                  |
+| `bron→`  | `screen.░variantRole('░id', {name: ░})█`                                  |
+| `brc→`   | `screen.░variantRole('checkbox')█`                                  |
+| `brcc→`  | `screen.░variantRole('checkbox', { checked: ░<true\|false>} })█`    |
+| `brh→`   | `screen.░variantRole('heading')█`                                   |
+| `brhl→`  | `screen.░variantRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
 
 #### 4. Text
 
 |  Trigger | Result                                                            |
 | :------- | ----------------------------------------------------------------- |
-| `bt→`    | `screen.░getByText(░)█`                                           |
-| `btf→`   | `screen.░getByText('░Text Match')█`                               |
-| `bti→`   | `screen.░getByText('░text match', {ignore: false})█`              |
-| `bts→`   | `screen.░getByText('░ext Matc', {exact: false})█`                 |
-| `btsi→`  | `screen.░getByText('░ext matc', {exact: false, ignore: false})█`  |
-| `btsw→`  | `screen.░getByText((content) => content.startsWith('░Text'))█`    |
-| `btesw→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.startsWith('░Text')<br/>})█</code>   |
-| `btew→`  | `screen.░getByText((content) => content.endsWith('░Match'))█`     |
-| `bteew→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.endsWith('░Match')<br/>})█</code>    |
+| `bt→`    | `screen.░variantText(░)█`                                           |
+| `btf→`   | `screen.░variantText('░Text Match')█`                               |
+| `bti→`   | `screen.░variantText('░text match', {ignore: false})█`              |
+| `bts→`   | `screen.░variantText('░ext Matc', {exact: false})█`                 |
+| `btsi→`  | `screen.░variantText('░ext matc', {exact: false, ignore: false})█`  |
+| `btsw→`  | `screen.░variantText((content) => content.startsWith('░Text'))█`    |
+| `btesw→` | <code>screen.░variantText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.startsWith('░Text')<br/>})█</code>   |
+| `btew→`  | `screen.░variantText((content) => content.endsWith('░Match'))█`     |
+| `bteew→` | <code>screen.░variantText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.endsWith('░Match')<br/>})█</code>    |
 
 ### Debug
 
