@@ -95,7 +95,8 @@
     "prefix": "btesw",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content, element) => {",
-      "\treturn element.tagName.toLowerCase() === '${2:div}' && content.startsWith('${3:Text}')",
+      "\tconst tag = element.tagName.toLowerCase() === '${2:div}'",
+      "\treturn tag && content.startsWith('${3:Text}')",
       "})"
     ],
     "description": "Text query start with match on specific element"
@@ -111,7 +112,8 @@
     "prefix": "bteew",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content, element) => {",
-      "\treturn element.tagName.toLowerCase() === '${2:div}' && content.endsWith('${3:Match}')",
+      "\tconst tag = element.tagName.toLowerCase() === '${2:div}'",
+      "\treturn tag && content.endsWith('${3:Match}')",
       "})"
     ],
     "description": "Text query end with match on specific element"

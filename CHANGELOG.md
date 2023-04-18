@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.0.7 - 2023/04/17
+
+### Fixed
+
+- by text function query
+
 ## 0.0.6 - 2023/04/17
 
 ### Added
