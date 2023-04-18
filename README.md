@@ -128,19 +128,19 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 ### Queries
 
-All the query `░variant` start with `░getBy` by default, but can be easily changed between `<getBy|getAllBy|queryBy|queryAllBy|findBy|findByAll>` once reach the TAB position.
+All the query `░variant` start with `getBy` by default, but can be easily changed between `<getBy|getAllBy|queryBy|queryAllBy|findBy|findByAll>` once reach the TAB position.
 
 #### 1. Role
 
-|  Trigger | Result                                                            |
-| :------- | ----------------------------------------------------------------- |
+|  Trigger | Result                                                              |
+| :------- | ------------------------------------------------------------------- |
 | `br→`    | `screen.░variantRole('░id')█`                                       |
 | `bro→`   | `screen.░variantRole('░id', {░})█`                                  |
-| `bron→`  | `screen.░variantRole('░id', {name: ░})█`                                  |
+| `bron→`  | `screen.░variantRole('░id', {name: ░})█`                            |
 | `brc→`   | `screen.░variantRole('checkbox')█`                                  |
-| `brcc→`  | `screen.░variantRole('checkbox', { checked: ░<true\|false>} })█`    |
+| `brcc→`  | <code>screen.░variantRole('checkbox', { checked: ░<true&#124;false>} )█</code>    |
 | `brh→`   | `screen.░variantRole('heading')█`                                   |
-| `brhl→`  | `screen.░variantRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
+| `brhl→`  | <code>screen.░variantRole('heading', { level: ░<1&#124;2&#124;3&#124;4&#124;5&#124;6>} )█</code>  |
 
 #### 4. Text
 
