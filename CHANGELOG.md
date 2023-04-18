@@ -9,6 +9,17 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.0.6 - 2023/04/17
+
+### Added
+
+- cheat sheet helper section on README
+- wait for snippets
+
+### Changed
+
+- snippets with multiple search variants to avoid repetition
+
 ## 0.0.5 - 2023/04/16
 
 ### Added

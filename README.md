@@ -19,11 +19,13 @@ The quick and easy way to create and use Testing Library with [VS Code](https://
   - [Extension Manager](#extension-manager)
   - [Marketplace](#marketplace)
 - [Supported Languages](#supported-languages)
+- [Cheat Sheet](#cheat-sheet)
 - [Snippets](#snippets)
   - [Import](#import)
   - [User Event](#user-event)
   - [Queries](#queries)
   - [Regex](#regex)
+  - [Wait](#wait)
 - [Keyboard](#keyboard)
 - [Settings](#settings)
 - [About](#about)
@@ -68,6 +70,32 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 
 ---
 
+## Cheat Sheet
+
+| Search Variants  | Result                                        |
+| ---------------- | --------------------------------------------- |
+| `getBy`...       | `Element` or `Error`                          |
+| `getAllBy`...    | `Element[]` or `Error`                        |
+| `queryBy`...     | `Element` or `null`                           |
+| `queryAllBy`...  | `Element[]` or `null`                         |
+| `findBy`...      | `Promise<Element>` or `Promise<rejection>`    |
+| `findAllBy`...   | `Promise<Element[]>` or `Promise<rejection>`  |
+
+| Search Types          | Result                                        |
+| --------------------- | --------------------------------------------- |
+| ...`Role`             | `<div aria="role">` or [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)  |
+| ...`LabelText`        | `<label for="Text">`                          |
+| ...`PlaceHolderText`  | `<input placeholder="Text">`                  |
+| ...`Text`             | `<a href="/page">Text</a>`                    |
+| ...`DisplayValue`     | `<input value="Text">`                        |
+| ...`AltText`          | `<img alt="Text">`                            |
+| ...`Title`            | `<span title="Text">` or `<title>`            |
+| ...`TestId`           | `<input data-testid="Id">`                    |
+
+⇧ [Back to menu](#menu)
+
+---
+
 ## Snippets
 
 Below is a list of all available snippets and the triggers of each one. The `░` means the `TAB` jump position and `█` the final cursor position.
@@ -90,47 +118,62 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 ### Queries
 
-|  Trigger  | Result                                                           |
-| --------: | ---------------------------------------------------------------- |
-|   `gbr→`  | `screen.getByRole('░id')█`                                       |
-|  `gbro→`  | `screen.getByRole('░id', {░})█`                                  |
-|  `gbrc→`  | `screen.getByRole('checkbox')█`                                  |
-| `gbrcc→`  | `screen.getByRole('checkbox', { checked: ░<true\|false>} })█`    |
-|  `gbrh→`  | `screen.getByRole('heading')█`                                   |
-| `gbrhl→`  | `screen.getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
-|  `gabr→`  | `screen.getAllByRole('░id')█`                                    |
-| `gabro→`  | `screen.getAllByRole('░id', {░})█`                               |
-|   `gbt→`  | `screen.getByText(░)█`                                           |
-|  `gbtf→`  | `screen.getByText('░Text Match')█`                               |
-|  `gbti→`  | `screen.getByText('░text match', {ignore: false})█`              |
-|  `gbts→`  | `screen.getByText('░ext Matc', {exact: false})█`                 |
-| `gbtsi→`  | `screen.getByText('░ext matc', {exact: false, ignore: false})█`  |
-| `gbtsw→`  | `screen.getByText((content) => content.startsWith('░Text'))█`    |
-| `gbtesw→` | <code>screen.getByText((content, element) => {<br/>&nbsp;&nbsp;return element.tagName.toLowerCase() === '░div' && content.startsWith('░Text')<br/>})█</code>   |
-| `gbtew→`  | `screen.getByText((content) => content.endsWith('░Match'))█`     |
-| `gbteew→` | <code>screen.getByText((content, element) => {<br/>&nbsp;&nbsp;return element.tagName.toLowerCase() === '░div' && content.endsWith('░Match')<br/>})█</code>    |
+Sorted by recommended official priority
+
+1. Role
+
+|  Trigger | Result                                                            |
+| :------- | ----------------------------------------------------------------- |
+| `br→`    | `screen.░getByRole('░id')█`                                       |
+| `bro→`   | `screen.░getByRole('░id', {░})█`                                  |
+| `bron→`  | `screen.░getByRole('░id', {name: ░})█`                                  |
+| `brc→`   | `screen.░getByRole('checkbox')█`                                  |
+| `brcc→`  | `screen.░getByRole('checkbox', { checked: ░<true\|false>} })█`    |
+| `brh→`   | `screen.░getByRole('heading')█`                                   |
+| `brhl→`  | `screen.░getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
+
+4. Text
+
+|  Trigger | Result                                                           |
+| :------- | ---------------------------------------------------------------- |
+| `bt→`    | `screen.░getByText(░)█`                                           |
+| `btf→`   | `screen.░getByText('░Text Match')█`                               |
+| `bti→`   | `screen.░getByText('░text match', {ignore: false})█`              |
+| `bts→`   | `screen.░getByText('░ext Matc', {exact: false})█`                 |
+| `btsi→`  | `screen.░getByText('░ext matc', {exact: false, ignore: false})█`  |
+| `btsw→`  | `screen.░getByText((content) => content.startsWith('░Text'))█`    |
+| `btesw→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;return element.tagName.toLowerCase() === '░div' && content.startsWith('░Text')<br/>})█</code>   |
+| `btew→`  | `screen.░getByText((content) => content.endsWith('░Match'))█`     |
+| `bteew→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;return element.tagName.toLowerCase() === '░div' && content.endsWith('░Match')<br/>})█</code>    |
 
 ### Debug
 
 |  Trigger | Result                               |
-| -------: | ------------------------------------ |
-|    `sd→` | `screen.debug()█`                    |
-|  `sltp→` | `screen.logTestingPlaygroundURL()█`  |
+| :------- | ------------------------------------ |
+| `sd→`    | `screen.debug()█`                    |
+| `sltp→`  | `screen.logTestingPlaygroundURL()█`  |
 
 ### Regex
 
 It can be used as a text matcher or `name` property on queries.
 
 | Trigger | Description                 | Result              |
-| ------: | --------------------------- | ------------------- |
-|   `rf→` | full text match             | `/^░Text Match$/█`  |
-|  `rfi→` | full text match ignore case | `/^░text match$/i█` |
-|   `rs→` | substring match             | `/░ext Matc/█`      |
-|  `rsi→` | substring match ignore case | `/░ext matc/i█`     |
-|  `rsw→` | start with                  | `/^░Text/█`         |
+| :------ | --------------------------- | ------------------- |
+| `rf→`   | full text match             | `/^░Text Match$/█`  |
+| `rfi→`  | full text match ignore case | `/^░text match$/i█` |
+| `rs→`   | substring match             | `/░ext Matc/█`      |
+| `rsi→`  | substring match ignore case | `/░ext matc/i█`     |
+| `rsw→`  | start with                  | `/^░Text/█`         |
 | `rswi→` | start with ignore case      | `/^░text/i█`        |
-|  `rew→` | end with                    | `/░Match$/█`        |
+| `rew→`  | end with                    | `/░Match$/█`        |
 | `rewi→` | end with ignore case        | `/░match$/i█`       |
+
+### Wait
+
+|  Trigger | Result                                                                          |
+| :------- | ------------------------------------------------------------------------------- |
+| `wf→`    | <code>await waitFor(<br/>&nbsp;&nbsp;() => ░<br/>)█</code>                      |
+| `wfr→`   | <code>await waitForElementToBeRemoved(<br/>&nbsp;&nbsp;() => ░<br/>)█</code>    |
 
 ⇧ [Back to menu](#menu)
 
