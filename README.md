@@ -72,7 +72,9 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 
 ## Cheat Sheet
 
-| Search Variants  | Result                                        |
+### Variants
+
+| Search           | Result                                        |
 | ---------------- | --------------------------------------------- |
 | `getBy`...       | `Element` or `Error`                          |
 | `getAllBy`...    | `Element[]` or `Error`                        |
@@ -81,7 +83,9 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 | `findBy`...      | `Promise<Element>` or `Promise<rejection>`    |
 | `findAllBy`...   | `Promise<Element[]>` or `Promise<rejection>`  |
 
-| Search Types          | Result                                        |
+### Types
+
+| Search                | Result                                        |
 | --------------------- | --------------------------------------------- |
 | ...`Role`             | `<div aria="role">` or [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)  |
 | ...`LabelText`        | `<label for="Text">`                          |
