@@ -63,6 +63,10 @@
         "path": "./snippets/regex.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/wait.json"
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/import.json"
       },
@@ -83,6 +87,10 @@
         "path": "./snippets/regex.json"
       },
       {
+        "language": "javascriptreact",
+        "path": "./snippets/wait.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/import.json"
       },
@@ -103,6 +111,10 @@
         "path": "./snippets/regex.json"
       },
       {
+        "language": "vue",
+        "path": "./snippets/wait.json"
+      },
+      {
         "language": "typescript",
         "path": "./snippets/import.json"
       },
@@ -121,6 +133,10 @@
       {
         "language": "typescript",
         "path": "./snippets/regex.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/wait.json"
       },
       {
         "language": "typescriptreact",
