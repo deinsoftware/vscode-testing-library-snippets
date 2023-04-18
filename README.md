@@ -118,13 +118,25 @@ Below is a list of all available snippets and the triggers of each one. The `░
 | `itr→`   | `import { render, screen } from '@testing-library/react'█`          |
 | `itv→`   | `import { render, screen } from '@testing-library/vue'█`            |
 | `itrh→`  | `import { renderHook } from '@testing-library/react'█`              |
-| `itue→`  | `import user from '@testing-library/user-event'█`                   |
+| `itue→`  | `import userEvent from '@testing-library/user-event'█`              |
 
 ### User Event
 
-|  Trigger | Result                                                                 |
-| :------- | ---------------------------------------------------------------------- |
-| `beus→`  | <code>beforeEach(() => {<br/>&nbsp;&nbsp;user.setup()<br/>})█</code>   |
+|  Trigger | Result                                                                      |
+| :------- | --------------------------------------------------------------------------- |
+| `es→`    | `userEvent.setup()█`                                                        |
+| `bees→`  | <code>beforeEach(() => {<br/>&nbsp;&nbsp;userEvent.setup()<br/>})█</code>   |
+| `ec→`    | `await userEvent.click(░element)█`                                          |
+| `edc→`   | `await userEvent.dblClick(░element)█`                                       |
+| `et→`    | `await userEvent.type(░element, '░text')█`                                  |
+| `ets→`   | ``await userEvent.type(░element, `░text{enter}`)█``                         |
+| `ecl→`   | `await userEvent.clear(░element)█`                                          |
+| `eso→`   | `await userEvent.selectOptions(░element, ['░value/label'])█`                |
+| `edo→`   | `await userEvent.deselectOptions(░element, ['░value/label'])█`              |
+| `etb→`   | `await userEvent.tab()█`                                                    |
+| `eh→`    | `await userEvent.hover(░element)█`                                          |
+| `euh→`   | `await userEvent.unhover(░element)█`                                        |
+| `ep→`    | `await userEvent.paste(░element, '░text')█`                                 |
 
 ### Queries
 
