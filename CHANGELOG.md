@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.0.3 - 2023/04/18
+
+### Added
+
+- LabelText queries snippets
+
 ## 0.2.0 - 2023/04/18
 
 ### Added
