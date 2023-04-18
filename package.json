@@ -1,7 +1,7 @@
 {
   "name": "testing-library-snippets",
   "description": "VS Code Testing Library snippets for JS and TS",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "displayName": "Testing Library Snippets",
   "publisher": "deinsoftware",
   "icon": "images/light-icon.png",
@@ -63,6 +63,10 @@
         "path": "./snippets/regex.json"
       },
       {
+        "language": "javascript",
+        "path": "./snippets/wait.json"
+      },
+      {
         "language": "javascriptreact",
         "path": "./snippets/import.json"
       },
@@ -83,6 +87,10 @@
         "path": "./snippets/regex.json"
       },
       {
+        "language": "javascriptreact",
+        "path": "./snippets/wait.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/import.json"
       },
@@ -103,6 +111,10 @@
         "path": "./snippets/regex.json"
       },
       {
+        "language": "vue",
+        "path": "./snippets/wait.json"
+      },
+      {
         "language": "typescript",
         "path": "./snippets/import.json"
       },
@@ -123,6 +135,10 @@
         "path": "./snippets/regex.json"
       },
       {
+        "language": "typescript",
+        "path": "./snippets/wait.json"
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/import.json"
       },
@@ -140,7 +156,11 @@
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/debug.json"
+        "path": "./snippets/regex.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/wait.json"
       }
     ]
   },
