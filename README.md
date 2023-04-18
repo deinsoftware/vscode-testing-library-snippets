@@ -72,7 +72,7 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 
 ## Cheat Sheet
 
-You can write any combination of Search variants and Search types.
+You can write any combination of **Search variants** and **Search types**.
 
 ### Search variants
 
@@ -128,31 +128,33 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 ### Queries
 
+All the query `░variant` start with `░getBy` by default, but can be easily changed between `<getBy|getAllBy|queryBy|queryAllBy|findBy|findByAll>` once reach the TAB position.
+
 #### 1. Role
 
 |  Trigger | Result                                                            |
 | :------- | ----------------------------------------------------------------- |
-| `br→`    | `screen.░getByRole('░id')█`                                       |
-| `bro→`   | `screen.░getByRole('░id', {░})█`                                  |
-| `bron→`  | `screen.░getByRole('░id', {name: ░})█`                                  |
-| `brc→`   | `screen.░getByRole('checkbox')█`                                  |
-| `brcc→`  | `screen.░getByRole('checkbox', { checked: ░<true\|false>} })█`    |
-| `brh→`   | `screen.░getByRole('heading')█`                                   |
-| `brhl→`  | `screen.░getByRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
+| `br→`    | `screen.░variantRole('░id')█`                                       |
+| `bro→`   | `screen.░variantRole('░id', {░})█`                                  |
+| `bron→`  | `screen.░variantRole('░id', {name: ░})█`                                  |
+| `brc→`   | `screen.░variantRole('checkbox')█`                                  |
+| `brcc→`  | `screen.░variantRole('checkbox', { checked: ░<true\|false>} })█`    |
+| `brh→`   | `screen.░variantRole('heading')█`                                   |
+| `brhl→`  | `screen.░variantRole('heading', { level: ░<1\|2\|3\|4\|5\|6>} })█`  |
 
 #### 4. Text
 
 |  Trigger | Result                                                            |
 | :------- | ----------------------------------------------------------------- |
-| `bt→`    | `screen.░getByText(░)█`                                           |
-| `btf→`   | `screen.░getByText('░Text Match')█`                               |
-| `bti→`   | `screen.░getByText('░text match', {ignore: false})█`              |
-| `bts→`   | `screen.░getByText('░ext Matc', {exact: false})█`                 |
-| `btsi→`  | `screen.░getByText('░ext matc', {exact: false, ignore: false})█`  |
-| `btsw→`  | `screen.░getByText((content) => content.startsWith('░Text'))█`    |
-| `btesw→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.startsWith('░Text')<br/>})█</code>   |
-| `btew→`  | `screen.░getByText((content) => content.endsWith('░Match'))█`     |
-| `bteew→` | <code>screen.░getByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.endsWith('░Match')<br/>})█</code>    |
+| `bt→`    | `screen.░variantText(░)█`                                           |
+| `btf→`   | `screen.░variantText('░Text Match')█`                               |
+| `bti→`   | `screen.░variantText('░text match', {ignore: false})█`              |
+| `bts→`   | `screen.░variantText('░ext Matc', {exact: false})█`                 |
+| `btsi→`  | `screen.░variantText('░ext matc', {exact: false, ignore: false})█`  |
+| `btsw→`  | `screen.░variantText((content) => content.startsWith('░Text'))█`    |
+| `btesw→` | <code>screen.░variantText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.startsWith('░Text')<br/>})█</code>   |
+| `btew→`  | `screen.░variantText((content) => content.endsWith('░Match'))█`     |
+| `bteew→` | <code>screen.░variantText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.endsWith('░Match')<br/>})█</code>    |
 
 ### Debug
 
