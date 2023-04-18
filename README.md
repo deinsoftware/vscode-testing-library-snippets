@@ -89,16 +89,16 @@ You can write any combination of Search variants and Search types.
 
 Sorted by oficial recommended [order of priority](https://testing-library.com/docs/queries/about/#priority).
 
-|   | Types                 | finds by...                      | DOM example                           |
-| - | --------------------- | -------------------------------- | ------------------------------------- |
-| 1 | ...,`Role`            | [ARIA role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)                        | `<div role="dialog" />`               |
-| 2 | ...,`LabelText`       | label or aria-label content      | `<label for="element" />`             |
-| 3 | ...,`PlaceholderText` | input placeholder value          | `<input placeholder="name" />`        |
-| 4 | ...,`Text`            | element text content             | `<p>Lorem ipsum</p>`                  |
-| 5 | ...,`DisplayValue`    | form element current value       | `<input value="Current Value">`       |
-| 6 | ...,`AltText`         | img alt attribute                | `<img alt="movie poster" />`          |
-| 7 | ...,`Title`           | title attribute or svg title tag | `<span title="Add" />` or `<title />` |
-| 8 | ...,`TestId`          | data-testid attribute            | `<div data-testid="some-message" />`  |
+|   | Types                | finds by...                      | DOM example                           |
+| - | -------------------- | -------------------------------- | ------------------------------------- |
+| 1 | ...`Role`            | [ARIA role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)                        | `<div role="dialog" />`               |
+| 2 | ...`LabelText`       | label or aria-label content      | `<label for="element" />`             |
+| 3 | ...`PlaceholderText` | input placeholder value          | `<input placeholder="name" />`        |
+| 4 | ...`Text`            | element text content             | `<p>Lorem ipsum</p>`                  |
+| 5 | ...`DisplayValue`    | form element current value       | `<input value="Current Value">`       |
+| 6 | ...`AltText`         | img alt attribute                | `<img alt="movie poster" />`          |
+| 7 | ...`Title`           | title attribute or svg title tag | `<span title="Add" />` or `<title />` |
+| 8 | ...`TestId`          | data-testid attribute            | `<div data-testid="some-message" />`  |
 
 > For more information visit the oficial cheat sheet: [DOM](https://testing-library.com/docs/dom-testing-library/cheatsheet) - [React](https://testing-library.com/docs/react-testing-library/cheatsheet) - [Vue](https://testing-library.com/docs/vue-testing-library/cheatsheet)
 
