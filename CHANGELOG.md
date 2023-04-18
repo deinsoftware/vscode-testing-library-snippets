@@ -9,6 +9,13 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.2.0 - 2023/04/18
+
+### Added
+
+- changed import name on userEvent
+- snippets for events
+
 ## 0.1.0 - 2023/04/18
 
 ### Changed

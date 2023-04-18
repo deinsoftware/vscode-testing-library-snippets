@@ -21,7 +21,7 @@
   },
   "import.testing-library.user-event": {
     "prefix": "itue",
-    "body": "import user from '@testing-library/user-event'$0",
+    "body": "import userEvent from '@testing-library/user-event'$0",
     "description": "imports user-event for testing-library"
   }
 }
