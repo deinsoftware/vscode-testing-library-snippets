@@ -72,29 +72,35 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 
 ## Cheat Sheet
 
-### Variants
+You can write any combination of Search variants and Search types.
 
-| Search           | Result                                        |
-| ---------------- | --------------------------------------------- |
-| `getBy`...       | `Element` or `Error`                          |
-| `getAllBy`...    | `Element[]` or `Error`                        |
-| `queryBy`...     | `Element` or `null`                           |
-| `queryAllBy`...  | `Element[]` or `null`                         |
-| `findBy`...      | `Promise<Element>` or `Promise<rejection>`    |
-| `findAllBy`...   | `Promise<Element[]>` or `Promise<rejection>`  |
+### Search variants
 
-### Types
+| Variants        | Return if no match | Return if 1 match | Return if 1+ match | Await? |
+| --------------- | ------------------ | ----------------- | ------------------ | ------ |
+| `getBy`...      | throw              | return            | throw              | No     |
+| `getAllBy`...   | throw              | array             | array              | No     |
+| `queryBy`...    | `null`             | return            | throw              | No     |
+| `queryAllBy`... | `[]`               | array             | array              | No     |
+| `findBy`...     | throw              | return            | throw              | Yes    |
+| `findAllBy`...  | throw              | array             | array              | Yes    |
 
-| Search                | Result                                        |
-| --------------------- | --------------------------------------------- |
-| ...`Role`             | `<div aria="role">` or [Aria Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)  |
-| ...`LabelText`        | `<label for="Text">`                          |
-| ...`PlaceHolderText`  | `<input placeholder="Text">`                  |
-| ...`Text`             | `<a href="/page">Text</a>`                    |
-| ...`DisplayValue`     | `<input value="Text">`                        |
-| ...`AltText`          | `<img alt="Text">`                            |
-| ...`Title`            | `<span title="Text">` or `<title>`            |
-| ...`TestId`           | `<input data-testid="Id">`                    |
+### Search types
+
+Sorted by oficial recommended [order of priority](https://testing-library.com/docs/queries/about/#priority).
+
+|   | Types                 | finds by...                      | DOM example                           |
+| - | --------------------- | -------------------------------- | ------------------------------------- |
+| 1 | ...,`Role`            | [ARIA role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#roles)                        | `<div role="dialog" />`               |
+| 2 | ...,`LabelText`       | label or aria-label content      | `<label for="element" />`             |
+| 3 | ...,`PlaceholderText` | input placeholder value          | `<input placeholder="name" />`        |
+| 4 | ...,`Text`            | element text content             | `<p>Lorem ipsum</p>`                  |
+| 5 | ...,`DisplayValue`    | form element current value       | `<input value="Current Value">`       |
+| 6 | ...,`AltText`         | img alt attribute                | `<img alt="movie poster" />`          |
+| 7 | ...,`Title`           | title attribute or svg title tag | `<span title="Add" />` or `<title />` |
+| 8 | ...,`TestId`          | data-testid attribute            | `<div data-testid="some-message" />`  |
+
+> For more information visit the oficial cheat sheet: [DOM](https://testing-library.com/docs/dom-testing-library/cheatsheet) - [React](https://testing-library.com/docs/react-testing-library/cheatsheet) - [Vue](https://testing-library.com/docs/vue-testing-library/cheatsheet)
 
 ⇧ [Back to menu](#menu)
 
@@ -121,8 +127,6 @@ Below is a list of all available snippets and the triggers of each one. The `░
 |  `beus→` | <code>beforeEach(() => {<br/>&nbsp;&nbsp;user.setup()<br/>})█</code>   |
 
 ### Queries
-
-Sorted by recommended official priority
 
 #### 1. Role
 
