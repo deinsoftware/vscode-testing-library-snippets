@@ -72,7 +72,7 @@ Open the extension manager with <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>X</kbd> (W
 
 ## Cheat Sheet
 
-You can write any combination of **Search variants** and **Search types**.
+You can write queries with any combination of **Search variants** and **Search types**.
 
 ### Search variants
 
@@ -113,48 +113,48 @@ Below is a list of all available snippets and the triggers of each one. The `░
 ### Import
 
 |  Trigger | Result                                                              |
-| -------: | ------------------------------------------------------------------- |
-|   `itl→` | `import { render, screen } from '@testing-library/░<react\|vue>'█`  |
-|   `itr→` | `import { render, screen } from '@testing-library/react'█`          |
-|   `itv→` | `import { render, screen } from '@testing-library/vue'█`            |
-|  `itrh→` | `import { renderHook } from '@testing-library/react'█`              |
-|  `itue→` | `import user from '@testing-library/user-event'█`                   |
+| :------- | ------------------------------------------------------------------- |
+| `itl→`   | `import { render, screen } from '@testing-library/░<react\|vue>'█`  |
+| `itr→`   | `import { render, screen } from '@testing-library/react'█`          |
+| `itv→`   | `import { render, screen } from '@testing-library/vue'█`            |
+| `itrh→`  | `import { renderHook } from '@testing-library/react'█`              |
+| `itue→`  | `import user from '@testing-library/user-event'█`                   |
 
 ### User Event
 
 |  Trigger | Result                                                                 |
-| -------: | ---------------------------------------------------------------------- |
-|  `beus→` | <code>beforeEach(() => {<br/>&nbsp;&nbsp;user.setup()<br/>})█</code>   |
+| :------- | ---------------------------------------------------------------------- |
+| `beus→`  | <code>beforeEach(() => {<br/>&nbsp;&nbsp;user.setup()<br/>})█</code>   |
 
 ### Queries
 
-All the query `░variant` start with `getBy` by default, but can be easily changed between `<getBy|getAllBy|queryBy|queryAllBy|findBy|findByAll>` once reach the TAB position.
+All the `░variantBy` cursor start with `getBy` by default, but can be easily changed between `<getBy|getAllBy|queryBy|queryAllBy|findBy|findByAll>` using arrow keys once reach the TAB position.
 
 #### 1. Role
 
-|  Trigger | Result                                                              |
-| :------- | ------------------------------------------------------------------- |
-| `br→`    | `screen.░variantRole('░id')█`                                       |
-| `bro→`   | `screen.░variantRole('░id', {░})█`                                  |
-| `bron→`  | `screen.░variantRole('░id', {name: ░})█`                            |
-| `brc→`   | `screen.░variantRole('checkbox')█`                                  |
-| `brcc→`  | <code>screen.░variantRole('checkbox', { checked: ░<true&#124;false>} )█</code>    |
-| `brh→`   | `screen.░variantRole('heading')█`                                   |
-| `brhl→`  | <code>screen.░variantRole('heading', { level: ░<1&#124;2&#124;3&#124;4&#124;5&#124;6>} )█</code>  |
+|  Trigger | Result                                                                                            |
+| :------- | ------------------------------------------------------------------------------------------------- |
+| `qr→`    | `screen.░variantByRole('░id')█`                                                                     |
+| `qro→`   | `screen.░variantByRole('░id', {░})█`                                                                |
+| `qron→`  | `screen.░variantByRole('░id', {name: ░})█`                                                          |
+| `qrc→`   | `screen.░variantByRole('checkbox')█`                                                                |
+| `qrcc→`  | <code>screen.░variantByRole('checkbox', { checked: ░<true&#124;false>} )█</code>                    |
+| `qrh→`   | `screen.░variantByRole('heading')█`                                                                 |
+| `qrhl→`  | <code>screen.░variantByRole('heading', { level: ░<1&#124;2&#124;3&#124;4&#124;5&#124;6>} )█</code>  |
 
 #### 4. Text
 
-|  Trigger | Result                                                            |
-| :------- | ----------------------------------------------------------------- |
-| `bt→`    | `screen.░variantText(░)█`                                           |
-| `btf→`   | `screen.░variantText('░Text Match')█`                               |
-| `bti→`   | `screen.░variantText('░text match', {ignore: false})█`              |
-| `bts→`   | `screen.░variantText('░ext Matc', {exact: false})█`                 |
-| `btsi→`  | `screen.░variantText('░ext matc', {exact: false, ignore: false})█`  |
-| `btsw→`  | `screen.░variantText((content) => content.startsWith('░Text'))█`    |
-| `btesw→` | <code>screen.░variantText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.startsWith('░Text')<br/>})█</code>   |
-| `btew→`  | `screen.░variantText((content) => content.endsWith('░Match'))█`     |
-| `bteew→` | <code>screen.░variantText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.endsWith('░Match')<br/>})█</code>    |
+|  Trigger | Result                                                              |
+| :------- | ------------------------------------------------------------------- |
+| `qt→`    | `screen.░variantByText(░)█`                                           |
+| `qtf→`   | `screen.░variantByText('░Text Match')█`                               |
+| `qti→`   | `screen.░variantByText('░text match', {ignore: false})█`              |
+| `qts→`   | `screen.░variantByText('░ext Matc', {exact: false})█`                 |
+| `qtsi→`  | `screen.░variantByText('░ext matc', {exact: false, ignore: false})█`  |
+| `qtsw→`  | `screen.░variantByText((content) => content.startsWith('░Text'))█`    |
+| `qtesw→` | <code>screen.░variantByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.startsWith('░Text')<br/>})█</code>   |
+| `qtew→`  | `screen.░variantByText((content) => content.endsWith('░Match'))█`     |
+| `qteew→` | <code>screen.░variantByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.endsWith('░Match')<br/>})█</code>    |
 
 ### Debug
 

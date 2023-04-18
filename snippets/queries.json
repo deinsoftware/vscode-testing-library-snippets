@@ -1,98 +1,98 @@
 {
-  "by.role": {
-    "prefix": "br",
+  "query.role": {
+    "prefix": "qr",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('${2:id}')$0"
     ],
     "description": "Role query"
   },
-  "by.role.options": {
-    "prefix": "bro",
+  "query.role.options": {
+    "prefix": "qro",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('${2:id}', {$3})$0"
     ],
     "description": "Role query with options"
   },
-  "by.role.options.name": {
-    "prefix": "bron",
+  "query.role.options.name": {
+    "prefix": "qron",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('${2:id}',\t{$3})$0"
     ],
     "description": "Role query with name on options"
   },
-  "by.role.checkbox": {
-    "prefix": "brc",
+  "query.role.checkbox": {
+    "prefix": "qrc",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('checkbox')$0"
     ],
     "description": "Role checkbox"
   },
-  "by.role.checkbox.checked": {
-    "prefix": "brcc",
+  "query.role.checkbox.checked": {
+    "prefix": "qrcc",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('checkbox', { checked: ${2|true,false|} })$0"
     ],
     "description": "Role checkbox checked"
   },
-  "by.role.heading": {
-    "prefix": "brh",
+  "query.role.heading": {
+    "prefix": "qrh",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('heading')$0"
     ],
     "description": "Role heading"
   },
-  "by.role.heading.level": {
-    "prefix": "brhl",
+  "query.role.heading.level": {
+    "prefix": "qrhl",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Role('heading', { level: ${2|1,2,3,4,5,6|} })$0"
     ],
     "description": "Role heading level"
   },
 
-  "by.text": {
-    "prefix": "bt",
+  "query.text": {
+    "prefix": "qt",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text($2)$0"
     ],
     "description": "Text query"
   },
-  "by.text.full": {
-    "prefix": "btf",
+  "query.text.full": {
+    "prefix": "qtf",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text('${2:Text Match}')$0"
     ],
     "description": "Text query full string match"
   },
-  "by.text.ignore": {
-    "prefix": "bti",
+  "query.text.ignore": {
+    "prefix": "qti",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text('${2:text match}', {ignore: false})$0"
     ],
     "description": "Text query full string ignore case"
   },
-  "by.text.substring": {
-    "prefix": "bts",
+  "query.text.substring": {
+    "prefix": "qts",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text('${2:ext Matc}', {exact: false})$0"
     ],
     "description": "Text query substring match"
   },
-  "by.text.substring+ignore": {
-    "prefix": "btsi",
+  "query.text.substring+ignore": {
+    "prefix": "qtsi",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text('${2:ext matc}', {exact: false, ignore: false})$0"
     ],
     "description": "Text query substring match ignore case"
   },
-  "by.text.startWith": {
-    "prefix": "btsw",
+  "query.text.startWith": {
+    "prefix": "qtsw",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content) => content.startsWith('${2:Text}'))$0"
     ],
     "description": "Text query start with match"
   },
-  "by.text.element.startWith": {
-    "prefix": "btesw",
+  "query.text.element.startWith": {
+    "prefix": "qtesw",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content, element) => {",
       "\tconst tag = element.tagName.toLowerCase() === '${2:div}'",
@@ -101,15 +101,15 @@
     ],
     "description": "Text query start with match on specific element"
   },
-  "by.text.endWith": {
-    "prefix": "btew",
+  "query.text.endWith": {
+    "prefix": "qtew",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content) => content.endsWith('${2:Match}'))$0"
     ],
     "description": "Text query end with match"
   },
-  "by.text.element.endWith": {
-    "prefix": "bteew",
+  "query.text.element.endWith": {
+    "prefix": "qteew",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Text((content, element) => {",
       "\tconst tag = element.tagName.toLowerCase() === '${2:div}'",
