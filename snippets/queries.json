@@ -49,6 +49,42 @@
     "description": "Role heading level"
   },
 
+  "query.label": {
+    "prefix": "ql",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}LabelText(${2})$0"
+    ],
+    "description": "LabelText query with options"
+  },
+  "query.label.full": {
+    "prefix": "qlf",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}LabelText('${2:Text Match}')$0"
+    ],
+    "description": "LabelText query with options"
+  },
+  "query.label.substring": {
+    "prefix": "qls",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}LabelText('${2:ext Matc}', {exact: false})$0"
+    ],
+    "description": "LabelText query substring match"
+  },
+  "query.label.query": {
+    "prefix": "qlq",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}LabelText('${2:Text Match}', {selector: '${3:query}'})$0"
+    ],
+    "description": "LabelText query with a specific query selector"
+  },
+  "query.label.substring+query": {
+    "prefix": "qlsq",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}LabelText('${2:ext Matc}', {exact: false, selector: '${3:query}'})$0"
+    ],
+    "description": "LabelText query substring match with a specific query selector"
+  },
+
   "query.text": {
     "prefix": "qt",
     "body": [

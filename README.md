@@ -144,8 +144,8 @@ All the `░variantBy` cursor start with `getBy` by default, but can be easily c
 
 #### 1. Role
 
-|  Trigger | Result                                                                                            |
-| :------- | ------------------------------------------------------------------------------------------------- |
+|  Trigger | Result                                                                                              |
+| :------- | --------------------------------------------------------------------------------------------------- |
 | `qr→`    | `screen.░variantByRole('░id')█`                                                                     |
 | `qro→`   | `screen.░variantByRole('░id', {░})█`                                                                |
 | `qron→`  | `screen.░variantByRole('░id', {name: ░})█`                                                          |
@@ -154,10 +154,20 @@ All the `░variantBy` cursor start with `getBy` by default, but can be easily c
 | `qrh→`   | `screen.░variantByRole('heading')█`                                                                 |
 | `qrhl→`  | <code>screen.░variantByRole('heading', { level: ░<1&#124;2&#124;3&#124;4&#124;5&#124;6>} )█</code>  |
 
+#### 2. LabelText
+
+|  Trigger | Result                                                                          |
+| :------- | ------------------------------------------------------------------------------- |
+| `ql→`    | `screen.░variantByLabelText(░)█`                                                |
+| `qlf→`   | `screen.░variantByLabelText('░Text Match')█`                                    |
+| `qls→`   | `screen.░variantByLabelText('░ext Matc', {exact: false})█`                      |
+| `qlq→`   | `screen.░variantByLabelText('░Text Match', {selector: '░query'})█`              |
+| `qlsq→`  | `screen.░variantByLabelText('░ext matc', {exact: false, selector: '░query'})█`  |
+
 #### 4. Text
 
-|  Trigger | Result                                                              |
-| :------- | ------------------------------------------------------------------- |
+|  Trigger | Result                                                                |
+| :------- | --------------------------------------------------------------------- |
 | `qt→`    | `screen.░variantByText(░)█`                                           |
 | `qtf→`   | `screen.░variantByText('░Text Match')█`                               |
 | `qti→`   | `screen.░variantByText('░text match', {ignore: false})█`              |
