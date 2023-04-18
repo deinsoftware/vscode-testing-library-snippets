@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.1.0 - 2023/04/18
+
+### Changed
+
+- rename all the query snippets
+
 ## 0.0.10 - 2023/04/18
 
 ### Changed
