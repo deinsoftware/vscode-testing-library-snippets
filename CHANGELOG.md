@@ -9,6 +9,12 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 0.0.10 - 2023/04/18
+
+### Changed
+
+- Multiselect documentation separator on marketplace
+
 ## 0.0.9 - 2023/04/18
 
 ### Changed
