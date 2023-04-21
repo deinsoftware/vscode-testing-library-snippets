@@ -216,9 +216,9 @@ All the `░variantBy` cursor start with `getBy` by default, but can be easily c
 
 |  Trigger | Result                                                   |
 | :------- | -------------------------------------------------------- |
-| `qtid→`  | `screen.░variantByTestId(░)█`                            |
-| `qtidf→` | `screen.░variantByTestId('░Text Match')█`                |
-| `qtids→` | `screen.░variantByTestId('░ext Matc', {exact: false})█`  |
+| `qid→`   | `screen.░variantByTestId(░)█`                            |
+| `qidf→`  | `screen.░variantByTestId('░Text Match')█`                |
+| `qids→`  | `screen.░variantByTestId('░ext Matc', {exact: false})█`  |
 
 ### Debug
 

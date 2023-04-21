@@ -244,21 +244,21 @@
   },
 
   "query.TestId": {
-    "prefix": "qtid",
+    "prefix": "qid",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId($2)$0"
     ],
     "description": "TestId query"
   },
   "query.TestId.full": {
-    "prefix": "qtidf",
+    "prefix": "qidf",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId('${2:Text Match}')$0"
     ],
     "description": "TestId query full string match"
   },
   "query.TestId.substring": {
-    "prefix": "qtids",
+    "prefix": "qids",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId('${2:ext Matc}', {exact: false})$0"
     ],
