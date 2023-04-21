@@ -208,17 +208,17 @@ All the `░variantBy` cursor start with `getBy` by default, but can be easily c
 
 |  Trigger | Result                                                  |
 | :------- | ------------------------------------------------------- |
-| `qt→`    | `screen.░variantByTitle(░)█`                            |
-| `qtf→`   | `screen.░variantByTitle('░Text Match')█`                |
-| `qts→`   | `screen.░variantByTitle('░ext Matc', {exact: false})█`  |
+| `qtt→`   | `screen.░variantByTitle(░)█`                            |
+| `qttf→`  | `screen.░variantByTitle('░Text Match')█`                |
+| `qtts→`  | `screen.░variantByTitle('░ext Matc', {exact: false})█`  |
 
 #### 9. TestId
 
 |  Trigger | Result                                                   |
 | :------- | -------------------------------------------------------- |
-| `qti→`   | `screen.░variantByTestId(░)█`                            |
-| `qtif→`  | `screen.░variantByTestId('░Text Match')█`                |
-| `qtis→`  | `screen.░variantByTestId('░ext Matc', {exact: false})█`  |
+| `qid→`   | `screen.░variantByTestId(░)█`                            |
+| `qidf→`  | `screen.░variantByTestId('░Text Match')█`                |
+| `qids→`  | `screen.░variantByTestId('░ext Matc', {exact: false})█`  |
 
 ### Debug
 
