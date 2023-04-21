@@ -222,21 +222,21 @@
   },
 
   "query.Title": {
-    "prefix": "qt",
+    "prefix": "qtt",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Title($2)$0"
     ],
     "description": "Title query"
   },
   "query.Title.full": {
-    "prefix": "qtf",
+    "prefix": "qttf",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Title('${2:Text Match}')$0"
     ],
     "description": "Title query full string match"
   },
   "query.Title.substring": {
-    "prefix": "qts",
+    "prefix": "qtts",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Title('${2:ext Matc}', {exact: false})$0"
     ],
@@ -244,21 +244,21 @@
   },
 
   "query.TestId": {
-    "prefix": "qti",
+    "prefix": "qtid",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId($2)$0"
     ],
     "description": "TestId query"
   },
   "query.TestId.full": {
-    "prefix": "qtif",
+    "prefix": "qtidf",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId('${2:Text Match}')$0"
     ],
     "description": "TestId query full string match"
   },
   "query.TestId.substring": {
-    "prefix": "qtis",
+    "prefix": "qtids",
     "body": [
       "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId('${2:ext Matc}', {exact: false})$0"
     ],
