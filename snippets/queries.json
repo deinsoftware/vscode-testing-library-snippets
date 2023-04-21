@@ -153,5 +153,115 @@
       "})"
     ],
     "description": "Text query end with match on specific element"
+  },
+
+  "query.placeholder": {
+    "prefix": "qp",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}PlaceholderText($2)$0"
+    ],
+    "description": "PlaceholderText query"
+  },
+  "query.placeholder.full": {
+    "prefix": "qpf",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}PlaceholderText('${2:Text Match}')$0"
+    ],
+    "description": "PlaceholderText query full string match"
+  },
+  "query.placeholder.substring": {
+    "prefix": "qps",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}PlaceholderText('${2:ext Matc}', {exact: false})$0"
+    ],
+    "description": "PlaceholderText query substring match"
+  },
+
+  "query.displayValue": {
+    "prefix": "qd",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}DisplayValue($2)$0"
+    ],
+    "description": "DisplayValue query"
+  },
+  "query.displayValue.full": {
+    "prefix": "qdf",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}DisplayValue('${2:Text Match}')$0"
+    ],
+    "description": "DisplayValue query full string match"
+  },
+  "query.displayValue.substring": {
+    "prefix": "qds",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}DisplayValue('${2:ext Matc}', {exact: false})$0"
+    ],
+    "description": "DisplayValue query substring match"
+  },
+
+  "query.altText": {
+    "prefix": "qa",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}AltText($2)$0"
+    ],
+    "description": "AltText query"
+  },
+  "query.altText.full": {
+    "prefix": "qaf",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}AltText('${2:Text Match}')$0"
+    ],
+    "description": "AltText query full string match"
+  },
+  "query.altText.substring": {
+    "prefix": "qas",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}AltText('${2:ext Matc}', {exact: false})$0"
+    ],
+    "description": "AltText query substring match"
+  },
+
+  "query.Title": {
+    "prefix": "qt",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Title($2)$0"
+    ],
+    "description": "Title query"
+  },
+  "query.Title.full": {
+    "prefix": "qtf",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Title('${2:Text Match}')$0"
+    ],
+    "description": "Title query full string match"
+  },
+  "query.Title.substring": {
+    "prefix": "qts",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}Title('${2:ext Matc}', {exact: false})$0"
+    ],
+    "description": "Title query substring match"
+  },
+
+  "query.TestId": {
+    "prefix": "qti",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId($2)$0"
+    ],
+    "description": "TestId query"
+  },
+  "query.TestId.full": {
+    "prefix": "qtif",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId('${2:Text Match}')$0"
+    ],
+    "description": "TestId query full string match"
+  },
+  "query.TestId.substring": {
+    "prefix": "qtis",
+    "body": [
+      "screen.${1|getBy,getAllBy,queryBy,queryAllBy,findBy,findByAll|}TestId('${2:ext Matc}', {exact: false})$0"
+    ],
+    "description": "TestId query substring match"
   }
 }
