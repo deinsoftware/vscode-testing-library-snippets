@@ -9,6 +9,13 @@ Fixed       for any bug fixes.
 Security    to invite users to upgrade in case of vulnerabilities.
 -->
 
+## 1.0.0 - 2023/04/21
+
+### Added
+
+- PlaceholderText, DisplayValue, AltText, Title, TestId queries snippets
+- Visual example about how you can use the query variants
+
 ## 0.0.3 - 2023/04/18
 
 ### Added

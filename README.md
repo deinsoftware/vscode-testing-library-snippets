@@ -1,4 +1,4 @@
-# Testing Library Snippets (WIP)
+# Testing Library Snippets
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/deinsoftware.testing-library-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/deinsoftware.testing-library-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
@@ -142,6 +142,8 @@ Below is a list of all available snippets and the triggers of each one. The `░
 
 All the `░variantBy` cursor start with `getBy` by default, but can be easily changed between `<getBy|getAllBy|queryBy|queryAllBy|findBy|findByAll>` using arrow keys once reach the TAB position.
 
+![Variant Snippets Example](https://raw.githubusercontent.com/deinsoftware/vscode-testing-library-snippets/main/.github/examples/variant-snippets.gif)
+
 #### 1. Role
 
 |  Trigger | Result                                                                                              |
@@ -177,6 +179,46 @@ All the `░variantBy` cursor start with `getBy` by default, but can be easily c
 | `qtesw→` | <code>screen.░variantByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.startsWith('░Text')<br/>})█</code>   |
 | `qtew→`  | `screen.░variantByText((content) => content.endsWith('░Match'))█`     |
 | `qteew→` | <code>screen.░variantByText((content, element) => {<br/>&nbsp;&nbsp;const tag = element.tagName.toLowerCase() === '░div'<br/>&nbsp;&nbsp;return tag && content.endsWith('░Match')<br/>})█</code>    |
+
+#### 5. PlaceholderText
+
+|  Trigger | Result                                                            |
+| :------- | ----------------------------------------------------------------- |
+| `qp→`    | `screen.░variantByPlaceholderText(░)█`                            |
+| `qpf→`   | `screen.░variantByPlaceholderText('░Text Match')█`                |
+| `qps→`   | `screen.░variantByPlaceholderText('░ext Matc', {exact: false})█`  |
+
+#### 6. DisplayValue
+
+|  Trigger | Result                                                         |
+| :------- | -------------------------------------------------------------- |
+| `qd→`    | `screen.░variantByDisplayValue(░)█`                            |
+| `qdf→`   | `screen.░variantByDisplayValue('░Text Match')█`                |
+| `qds→`   | `screen.░variantByDisplayValue('░ext Matc', {exact: false})█`  |
+
+#### 7. AltText
+
+|  Trigger | Result                                                    |
+| :------- | --------------------------------------------------------- |
+| `qa→`    | `screen.░variantByAltText(░)█`                            |
+| `qaf→`   | `screen.░variantByAltText('░Text Match')█`                |
+| `qas→`   | `screen.░variantByAltText('░ext Matc', {exact: false})█`  |
+
+#### 8. Title
+
+|  Trigger | Result                                                  |
+| :------- | ------------------------------------------------------- |
+| `qt→`    | `screen.░variantByTitle(░)█`                            |
+| `qtf→`   | `screen.░variantByTitle('░Text Match')█`                |
+| `qts→`   | `screen.░variantByTitle('░ext Matc', {exact: false})█`  |
+
+#### 9. TestId
+
+|  Trigger | Result                                                   |
+| :------- | -------------------------------------------------------- |
+| `qti→`   | `screen.░variantByTestId(░)█`                            |
+| `qtif→`  | `screen.░variantByTestId('░Text Match')█`                |
+| `qtis→`  | `screen.░variantByTestId('░ext Matc', {exact: false})█`  |
 
 ### Debug
 

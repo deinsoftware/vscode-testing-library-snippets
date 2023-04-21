@@ -1,7 +1,7 @@
 {
   "name": "testing-library-snippets",
   "description": "VS Code Testing Library snippets for JS and TS",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "displayName": "Testing Library Snippets",
   "publisher": "deinsoftware",
   "icon": "images/light-icon.png",
