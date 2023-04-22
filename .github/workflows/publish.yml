@@ -41,7 +41,7 @@ jobs:
         with:
           tweet-message: "Extension for @code with testing library snippets ${{ github.event.release.tag_name }} 🐛🔨 is here 🥳\n\n
           $ ext install deinsoftware.testing-library-snippets\n\n
-          #vscode #snippets #javascript #testing-library\n\n
+          #vscode #snippets #javascript #testinglibrary #rtl\n\n
           https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets"
         env:
           TWITTER_CONSUMER_API_KEY: ${{ secrets.TWITTER_CONSUMER_API_KEY }}
