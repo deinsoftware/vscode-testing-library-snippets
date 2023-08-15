@@ -2,7 +2,8 @@
   "screen.debug": {
     "prefix": "sd",
     "body": "screen.debug()$0",
-    "description": "screen debug"
+    "description": "screen debug",
+    "when": "resourceFilename =~ /.*\\.(test|spec)\\.([tj]sx?)$/i"
   },
   "screen.log.testing-playground": {
     "prefix": "sltp",
