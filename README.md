@@ -1,8 +1,8 @@
 # Testing Library Snippets
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/deinsoftware.testing-library-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/deinsoftware.testing-library-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
-[![Ratings](https://img.shields.io/visual-studio-marketplace/stars/deinsoftware.testing-library-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
+[![Version](https://badgen.net/vs-marketplace/v/deinsoftware.testing-library-snippets)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
+[![Installs](https://badgen.net/vs-marketplace/i/deinsoftware.testing-library-snippets)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
+[![Ratings](https://img.shields.io/badge/ratings-5.0%20%E2%98%85-yellow)](https://marketplace.visualstudio.com/items?itemName=deinsoftware.testing-library-snippets)
 [![license](https://img.shields.io/github/license/deinsoftware/vscode-testing-library-snippets)](LICENSE.md)
 [![Open in VS Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/deinsoftware/vscode-testing-library-snippets)
 
